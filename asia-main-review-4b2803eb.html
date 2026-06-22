@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯 · 信息卡片介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f9fc;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e2a3a;
+            line-height: 1.7;
+            padding: 2.4rem 1.2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page {
+            max-width: 780px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 2.8rem 2rem 3.2rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+            color: #0b1a2c;
+            line-height: 1.2;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #5d6f84;
+            border-left: 3px solid #d0dae8;
+            padding-left: 1rem;
+            margin: 0.2rem 0 2rem 0;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            margin: 2.2rem 0 1.8rem;
+        }
+
+        .card {
+            background: #f2f5fa;
+            border-radius: 20px;
+            padding: 1.6rem 1.8rem;
+            transition: background 0.15s ease;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            font-weight: 550;
+            margin-bottom: 0.5rem;
+            color: #1d2b3f;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .card p {
+            font-size: 0.98rem;
+            color: #2b3b50;
+            margin: 0.4rem 0 0.2rem;
+            max-width: 640px;
+        }
+
+        .card ul {
+            list-style: none;
+            margin: 0.6rem 0 0.2rem;
+            padding-left: 0;
+        }
+
+        .card li {
+            font-size: 0.95rem;
+            padding: 0.2rem 0 0.2rem 1.4rem;
+            position: relative;
+            color: #1e2f41;
+        }
+
+        .card li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #7b8da3;
+        }
+
+        .highlight-link {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 1.8rem 2rem;
+            margin: 2.4rem 0 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e6ecf3;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .highlight-link a {
+            color: #0f3b6b;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1.5px solid #a0b9d4;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .highlight-link a:hover {
+            border-bottom-color: #0f3b6b;
+            color: #062a4a;
+        }
+
+        .faq-mini {
+            margin: 2rem 0 0.8rem;
+        }
+
+        .faq-item {
+            border-top: 1px solid #e4eaf2;
+            padding: 1rem 0 0.8rem;
+        }
+
+        .faq-item:first-child {
+            border-top: none;
+            padding-top: 0.4rem;
+        }
+
+        .faq-q {
+            font-weight: 540;
+            font-size: 0.98rem;
+            color: #1a2c40;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-a {
+            font-size: 0.93rem;
+            color: #3f5268;
+            padding-left: 0.25rem;
+        }
+
+        .meta-note {
+            font-size: 0.82rem;
+            color: #8598ae;
+            margin-top: 2.4rem;
+            border-top: 1px solid #edf2f8;
+            padding-top: 1.4rem;
+            text-align: left;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+            .page {
+                padding: 2rem 1.2rem 2.4rem;
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+            .card {
+                padding: 1.2rem 1.2rem;
+            }
+            .highlight-link {
+                padding: 1.4rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <h1>世界杯 · 信息页</h1>
+        <div class="subhead">稳定的浏览入口 · 卡片式结构说明</div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>⚽ 主视觉 · 赛事全景</h2>
+                <p>以清晰、克制的页面布局，呈现大型足球赛事的基本面貌。首页不堆砌弹窗或大图轮播，而是采用留白与分层信息，帮助浏览者快速定位感兴趣的内容模块。赛事动态、历史数据与球队概况均以独立卡片陈列，降低信息噪音。</p>
+            </div>
+
+            <div class="card">
+                <h2>📋 用途卡片 · 信息查找场景</h2>
+                <ul>
+                    <li>日常查阅赛程与积分榜，手机电脑均可快速加载</li>
+                    <li>赛事期间查看小组对阵、淘汰赛晋级路线</li>
+                    <li>回顾往届纪录、冠军统计与经典比赛摘要</li>
+                    <li>获取球队大名单与场地基础信息</li>
+                </ul>
+                <p style="margin-top:0.6rem;">每个栏目都有独立的文字区域，没有浮动广告或自动播放视频，适合安静浏览。</p>
+            </div>
+
+            <div class="card">
+                <h2>👤 适合人群</h2>
+                <p>关注大型赛事的普通观众、轻度体育迷、需要快速核对赛程的媒体工作者，以及习惯使用简约界面的中老年用户。页面不使用过小字体或强对比配色，文本区域宽度控制在舒适范围，减少横向眼动疲劳。</p>
+            </div>
+        </div>
+
+        <div class="highlight-link">
+            <p>如果你想直接了解完整的赛事安排与最新小组数据，可以随时通过一个稳定的入口访问 <a href="https://asia-main-worldcup.com">世界杯</a> 页面。该页面在桌面与移动设备上均保持统一的信息层级，没有强制跳转或下载要求，适合直接参考。</p>
+        </div>
+
+        <div class="faq-mini">
+            <div class="faq-item">
+                <div class="faq-q">— 页面是否提供实时比分更新？</div>
+                <div class="faq-a">部分板块会随赛事进程更新文字信息，但并非秒级推送，适合以小时为单位查看趋势。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">— 是否需要注册或登录才能阅读内容？</div>
+                <div class="faq-a">不需要。所有公开信息均可直接浏览，不设置付费墙或会员专区。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">— 页面排版在手机上有差异吗？</div>
+                <div class="faq-a">主要采用自适应网格，窄屏下卡片变为单列，字体大小仍保持可读性，无需横向缩放。</div>
+            </div>
+        </div>
+
+        <div class="meta-note">
+            本页为信息介绍性质，内容均基于公开赛事信息整理。不涉及博彩、投注或任何形式的诱导行为。
+        </div>
+
+    </div>
+</body>
+</html>
